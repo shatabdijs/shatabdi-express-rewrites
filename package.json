@@ -1,0 +1,51 @@
+{
+  "name": "shatabdi-express-rewrites",
+  "version": "1.0.0",
+  "description": "rewrite of functionality in different frameworks for performance comparison",
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint ./src/**/*.ts --fix",
+    "build": "tsc",
+    "server": "nodemon",
+    "start": "node ./dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YashKumarVerma/shatabdi-express-rewrites.git"
+  },
+  "keywords": [],
+  "author": "YashKumarVerma<yk.verma2000@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YashKumarVerma/shatabdi-express-rewrites/issues"
+  },
+  "homepage": "https://github.com/YashKumarVerma/shatabdi-express-rewrites#readme",
+  "devDependencies": {
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.13.5",
+    "@types/winston": "^2.4.4",
+    "@typescript-eslint/eslint-plugin": "^2.31.0",
+    "@typescript-eslint/parser": "^2.31.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "codecov": "^3.7.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "lcov-parse": "^1.0.0",
+    "mocha": "^7.1.2",
+    "nodemon": "^2.0.3",
+    "nyc": "^15.0.1",
+    "prettier": "^2.0.5",
+    "ts-node": "^8.10.1"
+  },
+  "dependencies": {
+    "ts": "^0.2.2",
+    "express": "^4.17.1",
+    "dotenv": "^8.2.0",
+    "jsdoc": "^3.6.4",
+    "typescript": "^3.8.3"
+  }
+}
