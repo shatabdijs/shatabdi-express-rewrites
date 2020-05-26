@@ -7,7 +7,9 @@
     "lint": "eslint ./src/**/*.ts --fix",
     "build": "tsc",
     "server": "nodemon",
-    "start": "node ./dist/app.js"
+    "start": "node ./dist/src/server.js",
+    "test": "./node_modules/mocha/bin/mocha --sort --require ts-node/register --timeout 1000 --exit ./test/*.ts",
+    "coverage": "nyc --reporter=lcov npm run test"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   },
   "homepage": "https://github.com/YashKumarVerma/shatabdi-express-rewrites#readme",
   "devDependencies": {
+    "@types/express": "^4.17.6",
     "@types/mocha": "^7.0.2",
     "@types/node": "^13.13.5",
     "@types/winston": "^2.4.4",

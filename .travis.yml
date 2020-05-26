@@ -15,7 +15,7 @@ script:
   - npm run build
 
 after_success:
-  - echo "SKIP DOCKER FOR FASTER BUILDS"
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t yashkumarverma/shatabdi-express-rewrites .
   - docker push yashkumarverma/shatabdi-express-rewrites
+  - surge --project ./coverage/lcov-report --domain shatabdi-express-rewrite-cov.surge.sh
